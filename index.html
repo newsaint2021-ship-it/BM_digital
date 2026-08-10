@@ -5,89 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BM Auto Repairs | Precision Automotive Engineering</title>
     
-    <!-- SEO & Meta -->
     <meta name="description" content="BM Auto Repairs: A multi-division automotive company. Mechanical repair, collision restoration, vehicle transformation, and fleet management. Built to keep you moving.">
     <link rel="canonical" href="https://bmautorepairs.co.za/">
     <meta name="theme-color" content="#0E0E10">
     
-    <!-- Open Graph -->
     <meta property="og:title" content="BM Auto Repairs | Precision Automotive Engineering">
     <meta property="og:description" content="Mechanical repair, collision restoration, vehicle transformation and automotive care.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=1600&auto=format&fit=crop">
     
-    <!-- Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="image" href="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=1600&auto=format&fit=crop" fetchpriority="high">
     
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <header class="site-header" id="header">
-        <div class="container header-inner">
-            <a href="#/" class="logo font-display" aria-label="BM Auto Repairs Home">BM AUTO REPAIRS</a>
-            <nav aria-label="Primary navigation">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#/services">Services ▾</a><div class="dropdown"><a href="#/services/mechanical">Mechanical</a><a href="#/services/collision">Collision & Refinishing</a><a href="#/services/wrapping">Wrapping & Surface</a><a href="#/services/fleet">Fleet Services</a></div></li>
-                    <li class="nav-item"><a href="#/projects">Work</a></li>
-                    <li class="nav-item"><a href="#/company">Company ▾</a><div class="dropdown"><a href="#/company">About BM</a></div></li>
-                    <li class="nav-item"><a href="#/resources">Resources ▾</a><div class="dropdown"><a href="#/resources">FAQs</a></div></li>
-                    <li class="nav-item"><a href="#/contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="nav-actions"><a href="#/booking" class="btn btn-primary">Book Inspection</a></div>
-            <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
-        </div>
-    </header>
-
-    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
-        <button class="close-btn" id="closeMenu" aria-label="Close menu">&times;</button>
-        <nav aria-label="Mobile navigation">
-            <ul>
-                <li><a href="#/services">Services</a><ul class="sub-links"><li><a href="#/services/mechanical">Mechanical</a></li><li><a href="#/services/collision">Collision & Refinishing</a></li><li><a href="#/services/wrapping">Wrapping & Surface</a></li><li><a href="#/services/fleet">Fleet Services</a></li></ul></li>
-                <li><a href="#/projects">Work</a></li>
-                <li><a href="#/company">Company</a><ul class="sub-links"><li><a href="#/company">About BM</a></li></ul></li>
-                <li><a href="#/resources">Resources</a><ul class="sub-links"><li><a href="#/resources">FAQs</a></li></ul></li>
-                <li><a href="#/contact">Contact</a></li>
-                <li style="margin-top: 2rem;"><a href="#/booking" class="btn btn-primary">Book Inspection</a></li>
-            </ul>
-        </nav>
-    </div>
-
+    
+    <header id="site-header"></header>
+    <div id="mobile-menu-container"></div>
+    
     <main id="main-content"></main>
-
-    <!-- Project Modal -->
+    
     <div class="project-modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
         <div class="project-modal-content" id="projectModalContent"></div>
     </div>
+    
+    <footer id="site-footer"></footer>
+    <div id="sticky-cta-container"></div>
 
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col"><h4 class="font-display" style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--text);">BM AUTO REPAIRS</h4><p style="font-size: 0.875rem; max-width: 300px;">Multi-division automotive company built to keep you moving. Mechanical, collision, wrapping, and fleet services.</p></div>
-                <div class="footer-col"><h4>Services</h4><ul><li><a href="#/services/mechanical">Mechanical</a></li><li><a href="#/services/collision">Collision & Refinishing</a></li><li><a href="#/services/wrapping">Wrapping & Surface</a></li><li><a href="#/services/fleet">Fleet Services</a></li></ul></div>
-                <div class="footer-col"><h4>Company</h4><ul><li><a href="#/company">About BM</a></li></ul></div>
-                <div class="footer-col"><h4>Resources</h4><ul><li><a href="#/resources">FAQs</a></li></ul></div>
-                <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+27618202622">061 820 2622</a></li><li><a href="mailto:autoworks95@gmail.com">Email</a></li><li><a href="https://wa.me/27618202622" target="_blank" rel="noopener noreferrer">WhatsApp</a></li><li><a href="#/contact">Directions</a></li></ul></div>
-            </div>
-            <div class="footer-bottom"><p>&copy; <span id="year">2024</span> BM Auto Repairs. All rights reserved.</p><p>Founder: Blessing</p></div>
-        </div>
-    </footer>
-
-    <div class="sticky-cta">
-        <a href="tel:+27618202622">Call</a>
-        <a href="https://wa.me/27618202622" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-        <a href="#/booking" class="book">Book Inspection</a>
-    </div>
-
-    <!-- Scripts -->
-    <script src="js/main.js" defer></script>
+    <script src="js/data.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/components/footer.js"></script>
+    <script src="js/components/mobile-menu.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
